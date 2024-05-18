@@ -40,11 +40,11 @@ def display_chat_history(chain):
 
     with container:
         with st.form(key='my_form', clear_on_submit=True):
-            user_input = st.text_input("Question:", placeholder="Ask about your PDF", key='input')
+            user_input = st.text_input("채팅:", placeholder="질문을 입력하세요.", key='input')
             submit_button = st.form_submit_button(label='Send')
 
         if submit_button and user_input:
-            with st.spinner('Generating response...'):
+            with st.spinner('응답 처리중...'):
                 output = conversation_chat(user_input, chain, st.session_state['history'])
 
             st.session_state['past'].append(user_input)
@@ -70,10 +70,10 @@ def create_conversational_chain(vector_store):
 def main():
     # Initialize session state
     initialize_session_state()
-    st.title("Multi-PDF ChatBot using Upstage Solar :books:")
+    st.title("DiaHelp: 당뇨 관리에 도움이 되는 채팅 컴퍼니언")
     # Initialize Streamlit
-    st.sidebar.title("Document Processing")
-    uploaded_files = st.sidebar.file_uploader("Upload files", accept_multiple_files=True)
+    st.sidebar.title("문서 업로드")
+    uploaded_files = st.sidebar.file_uploader("업로드 파일 선택", accept_multiple_files=True)
 
 
     if uploaded_files:

@@ -1,12 +1,7 @@
 langchain
-torch
-accelerate
-sentence_transformers
 streamlit_chat
 streamlit
 faiss-cpu
 tiktoken
 pypdf
-pandas
-numpy
 
