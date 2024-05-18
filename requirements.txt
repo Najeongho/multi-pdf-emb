@@ -4,4 +4,6 @@ streamlit
 faiss-cpu
 tiktoken
 pypdf
-
+dotenv
+openai
+langchain_upstage

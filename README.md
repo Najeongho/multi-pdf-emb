@@ -1,8 +1,6 @@
-# multi-pdf-emb
+# DiaHelp: 당뇨 관리에 도움이 되는 채팅 컴퍼니언 웹앱
 
-## Docker Commands
-
+## 서버 실행 방법
 ```
-docker build --build-arg API_KEY=<upstage_api_key> -t multi-pdf-emb .
-docker run -d -p 80:8501 multi-pdf-emb
+streamlit run app.py
 ```
