@@ -70,7 +70,7 @@ def create_conversational_chain(vector_store):
 def main():
     # Initialize session state
     initialize_session_state()
-    st.title("DiaHelp: 당뇨 관리에 도움이 되는 채팅 컴퍼니언")
+    st.title("Multi-PDF ChatBot using Upstage Solar")
     # Initialize Streamlit
     st.sidebar.title("문서 업로드")
     uploaded_files = st.sidebar.file_uploader("업로드 파일 선택", accept_multiple_files=True)
